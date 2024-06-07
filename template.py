@@ -11,6 +11,7 @@ package_name = "Electrecity_Bill_Prediction_EndToEnd_Projects"
 
 list_of_files = [
     Path(".github") /"workflows" / ".gitkeep",
+    f"src/__init__.py"
     f"src/{package_name}/__init__.py",
     f"src/{package_name}/component/__init__.py",
     f"src/{package_name}/component/c_01_data_ingestion.py",
@@ -42,3 +43,19 @@ list_of_files = [
     "templates/home.html",
     "templates/index.html"
 ]
+
+# Loop through each file in the list
+for filepath in list_of_files:
+    filepath = Path(filepath)
+
+    #Split the filepath into a directory and filename
+    filedir, filename = os.path.split(filepath)
+
+    # Create directories if they dont exist
+    if filedir != "":
+        os.makedirs(filedir, exist_ok=True)
+
+    # Create an empty file if it doesnt exist or if empty
+    if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0):
+        with open (filepath, 'w') as f:
+            pass
