@@ -1,0 +1,19 @@
+pandas
+numpy
+flask
+ipykernel
+python-box
+pyYAML
+joblib
+ensure
+types-pyYAML
+Flask-Cors
+scikit-learn
+matplotlib
+xgboost
+lightgbm
+catboost
+seaborn
+mlflow
+streamlit
+-e .
