@@ -2,7 +2,7 @@ import os
 from box.exceptions import BoxValueError
 import sys
 import yaml
-from src.ElectricityBill import logging
+from src.Electrecity_Bill_Prediction_EndToEnd_Projects import logging
 #from src.ElectricityBill.exception import FileOperationError
 import json
 import joblib
