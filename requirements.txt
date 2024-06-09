@@ -16,4 +16,5 @@ catboost
 seaborn
 mlflow
 streamlit
+gdown
 -e .
